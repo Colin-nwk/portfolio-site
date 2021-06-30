@@ -397,18 +397,19 @@
           <div class="col-sm-12 col-md-8">
             <div class="card p-3">
               <div class="card-body">
-                <form>
+                <form name="contact" method="POST" data-netlify="true">
+                  <input name="bot-field" type="hidden" value="contact"/>
                       <div class="form-group">
                         <label>Your Name</label>
-                        <input type="text" class="form-control" value="Mike">
+                        <input type="text" class="form-control" placeholder="collins" required>
                     </div>
                       <div class="form-group">
                         <label>Email address</label>
-                        <input type="email" class="form-control" placeholder="mike@email.com">
+                        <input type="email" class="form-control" placeholder="example@email.com" required>
                       </div>
                       <div class="form-group">
                         <label>Message</label>
-                        <input type="text" class="form-control" placeholder="Hello there!">
+                        <input type="text" class="form-control" placeholder="Hello there!" required>
                     </div>
                     <div class="btn-wrapper text-center mb-3">
                       <button type="submit" class="btn btn-simple btn-info float-right" rel="tooltip" data-original-title="Can't wait for your message" data-placement="right"> <i class="tim-icons icon-bulb-63"></i> Send text</button>
@@ -437,9 +438,9 @@
       <div class="squares square1"></div>
       <div class="squares square2"></div>
       <div class="squares square3"></div>
-      <div class="squares square4"></div>
+      <!-- <div class="squares square4"></div> -->
       <div class="squares square5"></div>
-      <div class="squares square6"></div>
+      <!-- <div class="squares square6"></div> -->
       <div class="squares square7"></div>
     <!-- End Contact -->
   </div>
@@ -528,6 +529,24 @@
   <script src="./assets/demo/demo.js"></script>
   <!-- Control Center for Black UI Kit: parallax effects, scripts for the example pages etc -->
   <script src="./assets/js/blk-design-system.min.js?v=1.0.0" type="text/javascript"></script>
+<!-- sending form using ajax -->
+  <script>
+
+document.querySelector("form").addEventListener("submit", handleSubmit);
+
+const handleSubmit = (e) => {
+  e.preventDefault()
+  let myForm = document.getElementById('contact');
+  let formData = new FormData(myForm)
+  fetch('/', {
+    method: 'POST',
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams(formData).toString()
+  }).then(() => console.log('Form successfully submitted')).catch((error) =>
+    alert(error))
+}
+
+  </script>
 
 </body>
 
