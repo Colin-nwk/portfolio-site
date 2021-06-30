@@ -397,8 +397,7 @@
           <div class="col-sm-12 col-md-8">
             <div class="card p-3">
               <div class="card-body">
-                <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-                  <input name="bot-field" type="hidden"/>
+                <form name="contact" method="POST" data-netlify="true">
                       <div class="form-group">
                         <label>Your Name</label>
                         <input type="text" class="form-control" placeholder="collins" name="name" required>
@@ -407,6 +406,9 @@
                         <label>Email address</label>
                         <input type="email" class="form-control" placeholder="example@email.com" name="email" required>
                       </div>
+                      <div class="form-group">
+                        <div data-netlify-recaptcha="true"></div>
+                    </div>
                       <div class="form-group">
                         <label>Message</label>
                         <textarea type="text" class="form-control" placeholder="Hello there!" name="message" required></textarea>
