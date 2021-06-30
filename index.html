@@ -397,22 +397,23 @@
           <div class="col-sm-12 col-md-8">
             <div class="card p-3">
               <div class="card-body">
-                <form name="contact" method="POST" data-netlify="true">
+                <form name="contactMeForm" method="POST" data-netlify="true">
                       <div class="form-group">
                         <label>Your Name</label>
-                        <input type="text" class="form-control" placeholder="collins" name="name" required>
+                        <input type="text" class="form-control" placeholder="collins" name="client" required>
                     </div>
                       <div class="form-group">
                         <label>Email address</label>
                         <input type="email" class="form-control" placeholder="example@email.com" name="email" required>
                       </div>
-                      <div class="form-group">
-                        <div data-netlify-recaptcha="true"></div>
-                    </div>
+                      
                       <div class="form-group">
                         <label>Message</label>
                         <textarea type="text" class="form-control" placeholder="Hello there!" name="message" required></textarea>
                     </div>
+                    <div class="form-group">
+                      <div data-netlify-recaptcha="true"></div>
+                  </div>
                     <div class="btn-wrapper text-center mb-3">
                       <button type="submit" class="btn btn-simple btn-info float-right" rel="tooltip" data-original-title="Can't wait for your message" data-placement="right"> <i class="tim-icons icon-bulb-63"></i> Send text</button>
                     </div>
