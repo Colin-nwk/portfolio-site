@@ -1066,6 +1066,75 @@ pre code {
   }
 }
 
+/* MINE COLLINS COLORS*/
+.text-blue{
+  color: var(--blue);
+}
+.text-indigo{
+  color: var(--indigo);
+}
+.text-purple{
+  color: var(--purple);
+}
+
+.text-red{
+  color: var(--red);
+}
+
+.text-yellow {
+  color: var(--yellow);
+}
+
+.text-orange {
+  color: var(--orange);
+}
+
+.text-green {
+  color: var(--green);
+}
+.text-teal{
+  color: var(--teal);
+}
+
+.text-white {
+  color: var(--white);
+}
+
+.text-cyan{
+  color: var(--cyan);
+}
+
+.bg-blue {
+  background-color: var(--blue);
+}
+.bg-indigo{
+  background-color: var(--indigo);
+}
+.bg-purple{
+  background-color: var(--purple);
+}
+.bg-red{
+  background-color: var(--red);
+}
+.bg-yellow {
+  background-color: var(--yellow);
+}
+.bg-orange {
+  background-color: var(--orange);
+}
+.bg-green {
+  background-color: var(--green);
+}
+.bg-teal{
+  background-color: var(--teal);
+}
+.bg-white{
+  background-color: var(--white);
+}
+.bg-cyan{
+  background-color: var(--cyan);
+}
+
 @media (min-width: 768px) {
   .col-md {
     flex-basis: 0;
