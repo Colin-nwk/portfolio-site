@@ -1,26 +1,29 @@
 {
-    "projects": [
+    "jobs": [
         {
             "id": 1,
-            "title": "Meeting with Client",
-            "description": "lorem ipsum lorem",
-            "image": "igentle.jpg",
-            "url": "www",
+            "title": "igentle cleaning",
+            "description": " magnam dolorum eaqus eveniet itaque blanditiis explicabo minus voluptatum harum praesentium molestiae fugiat voluptas molestias dolorem aspernatur ma",
+            "image": "mark-finn.jpg",
+            "url": "site-link",
             "gitlink": "git",
-            "github": true,
+            "github": false,
             "html": true,
             "css": true,
             "bootstrap": true,
             "php": true,
             "js": true,
             "angular": false,
-            "scss": true
+            "scss": false,
+            "vue": false,
+            "react": false,
+            "wordpress": false
         },
         {
             "id": 2,
             "title": "Meeting with Client",
             "description": "June 4st at 1:30pm",
-            "image": "igentle.jpg",
+            "image": "mark-finn.jpg",
             "url": "www",
             "gitlink": "git",
             "github": true,
@@ -30,7 +33,10 @@
             "php": true,
             "js": true,
             "angular": false,
-            "scss": true
+            "scss": false,
+            "vue": false,
+            "react": false,
+            "wordpress": false
         }
     ],
     "skills": [
@@ -42,7 +48,10 @@
             "php": true,
             "js": true,
             "angular": false,
-            "scss": true
+            "scss": true,
+            "vue": false,
+            "react": false,
+            "wordpress": true
         }
     ]
 }
