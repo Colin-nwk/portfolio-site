@@ -1,0 +1,48 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "title": "Meeting with Client",
+            "description": "lorem ipsum lorem",
+            "image": "igentle.jpg",
+            "url": "www",
+            "gitlink": "git",
+            "github": true,
+            "html": true,
+            "css": true,
+            "bootstrap": true,
+            "php": true,
+            "js": true,
+            "angular": false,
+            "scss": true
+        },
+        {
+            "id": 2,
+            "title": "Meeting with Client",
+            "description": "June 4st at 1:30pm",
+            "image": "igentle.jpg",
+            "url": "www",
+            "gitlink": "git",
+            "github": true,
+            "html": true,
+            "css": true,
+            "bootstrap": true,
+            "php": true,
+            "js": true,
+            "angular": false,
+            "scss": true
+        }
+    ],
+    "skills": [
+        {
+            "github": true,
+            "html": true,
+            "css": true,
+            "bootstrap": true,
+            "php": true,
+            "js": true,
+            "angular": false,
+            "scss": true
+        }
+    ]
+}
